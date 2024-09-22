@@ -1,4 +1,4 @@
-import { ConjugationType, Options, PartOfSpeech } from './shared.ts'
+import { ConjugationType, type Options, PartOfSpeech } from './shared.ts'
 import { causative, imperative, passive, potential } from './conjugate_verb.ts'
 
 const { VerbGodan, VerbIchidan } = PartOfSpeech

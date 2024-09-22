@@ -1,6 +1,6 @@
 import { dropLast } from '../shared/text.ts'
 import irregular from './conjugate_irregular_verb.ts'
-import { ConjugationType, Options, PartOfSpeech } from './shared.ts'
+import { ConjugationType, type Options, PartOfSpeech } from './shared.ts'
 
 const { VerbGodan, VerbIchidan, VerbIrregular, Verbする } = PartOfSpeech
 const {

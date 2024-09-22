@@ -1,5 +1,5 @@
 import { dropLast } from '../shared/text.ts'
-import { ConjugationType, Options, PartOfSpeech } from './shared.ts'
+import { ConjugationType, type Options, PartOfSpeech } from './shared.ts'
 
 const { AdjectiveIrregular, Adjectiveい, Adjectiveな } = PartOfSpeech
 const { Adverb, Past, Present } = ConjugationType
