@@ -1,0 +1,19 @@
+{
+  "name": "@bpev/conjugation",
+  "version": "0.0.1-beta.1",
+  "exports": {
+    "./ja": "./ja/mod.ts"
+  },
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "tasks": {
+    "test": "deno fmt && deno task test:check && deno lint && deno task test:unit",
+    "test:check": "deno check ./ja/mod.ts",
+    "test:unit": "deno test -A ."
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.5"
+  }
+}
