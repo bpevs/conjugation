@@ -1,6 +1,6 @@
 {
   "name": "@bpev/conjugation",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1",
   "exports": {
     "./ja": "./ja/mod.ts"
   },
