@@ -14,7 +14,36 @@ const result = conjugate('あう', {
   pos: PartOfSpeech.VerbGodan,
 })
 
-assert(result, ['あった']) // true
+assert(result, ['あった'])
+```
+
+Supported conjugation targets are:
+
+```ts
+ConjugationType.Past
+ConjugationType.Present
+
+// Adjective Only
+ConjugationType.Adverb
+
+// Verb Only
+ConjugationType.Causative
+ConjugationType.Imperative
+ConjugationType.Passive
+ConjugationType.Potential
+ConjugationType.Te
+ConjugationType.Volitional
+```
+
+Supported parts of speech (for input) are:
+
+```ts
+PartOfSpeech.Adjectiveな
+PartOfSpeech.Adjectiveい
+PartOfSpeech.VerbGodan
+PartOfSpeech.VerbIchidan
+PartOfSpeech.VerbIrregular
+PartOfSpeech.Verbする
 ```
 
 ## License

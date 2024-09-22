@@ -1,22 +1,16 @@
-/**
- * @description
- * The switches that deterine the conjugation transformations to the chars
- */
+/** The switches that deterine the conjugation transformations to the chars */
 export interface Options {
-  /** Part of Speech of the chars **/
+  /** Part of Speech of the chars */
   pos: PartOfSpeech
-  /** The type of conjugation to perform on the chars **/
+  /** The type of conjugation to perform on the chars */
   type: ConjugationType
-  /** Whether we should conjugate to a positive or negative form **/
+  /** Whether we should conjugate to a positive or negative form */
   affirmative?: boolean
-  /** Whether we should conjugate to a casual or polite form **/
+  /** Whether we should conjugate to a casual or polite form */
   polite?: boolean
 }
 
-/**
- * @description
- * The supported targets for conjugation
- */
+/** The supported targets for conjugation */
 export enum ConjugationType {
   Present = 'Present',
   Past = 'Past',
@@ -29,12 +23,8 @@ export enum ConjugationType {
   Volitional = 'Volitional',
 }
 
-/**
- * @description
- * The supported parts of speech for input
- */
+/** The supported parts of speech for input */
 export enum PartOfSpeech {
-  Adjective = 'Adjective',
   Adjectiveな = 'Adjectiveな',
   Adjectiveの = 'Adjectiveの',
   Adjectiveい = 'Adjectiveい',
@@ -47,7 +37,6 @@ export enum PartOfSpeech {
 
 export function isAdjective(pos: PartOfSpeech): boolean {
   return [
-    PartOfSpeech.Adjective,
     PartOfSpeech.Adjectiveな,
     PartOfSpeech.Adjectiveの,
     PartOfSpeech.Adjectiveい,

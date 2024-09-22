@@ -9,8 +9,6 @@ import { isAdjective, isVerb, type Options } from './shared.ts'
 export { ConjugationType, type Options, PartOfSpeech } from './shared.ts'
 
 /**
- * @default
- *
  * Given a word and options, return an array of all valid conjugation results.
  *
  * @example

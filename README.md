@@ -7,16 +7,16 @@ integrating them easier.
 Since I am tending to build off of prior work, each language may have different
 license conditions and usage. Please refer to the individual locale directories.
 
-### Import
+## Import
+
+This library is published to [jsr.io](https://jsr.io/@bpev/conjugation), and can
+be used in various runtimes.
 
 - npm: `npx jsr add @bpev/conjugation`
 - deno: `deno add @bpev/conjugation`
 - bun: `bunx jsr add @bpev/conjugation`
 - yarn: `yarn dlx jsr add @bpev/conjugation`
 - pnpm: `pnpm dlx jsr add @bpev/conjugation`
-
-This library is published to [jsr.io](https://jsr.io/@bpev/conjugation), and can
-be used in various runtimes.
 
 For usage in the browser, we can import from esm.sh:
 
@@ -35,5 +35,5 @@ const result = conjugate('あう', {
   pos: PartOfSpeech.VerbGodan,
 })
 
-assert(result, ['あった']) // true
+assert(result, ['あった'])
 ```
